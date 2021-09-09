@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithHarry</title>
+</head>
+<style>
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        background: #000;
+    }
+    .term{
+        display:flex;
+    }
+    .term > ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        color: azure;
+    }
+    .term2 > ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: center;
+    }
+    .part{
+        margin: 0px 15px ;
+    }
+    .term2{
+        text-align: center;
+        float: right;
+    }
+    .part2{
+        margin: 0px 19px;
+    }
+    .navbar {
+        align-items: center;
+    }
+    #image{
+        border-radius: 10px 10px ;
+
+    }
+    .part3{
+        background-color: rgb(159, 174, 218);
+        padding: 8px  25px ;
+        border-radius: 12px 12px ;
+        font-weight: bold;
+        border: 2px solid black;
+    }
+    input{
+        padding: 8px 15px ;
+        border-radius: 15px 15px ;
+    }
+    .part  {
+        padding: 3px 0px ;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    .term ul {
+        text-align: center;
+    }
+    .under{
+        text-align: center;
+        margin-left: -40px;
+    }
+    .part:hover{
+        color:aqua;
+        cursor: pointer;
+    }
+    .part3:hover{
+             background-color: rgb(96, 204, 143);
+             color: #000;
+             cursor: pointer;
+             transition: 2s;
+             color: brown;
+             font-weight: bold;
+             transition:linear;
+             border: 2px solid black;
+    }
+    .chan{
+        width: 100px;
+        height: 35px;
+    }
+    .secbar{
+        text-align: center;
+        background-color:rgb(219, 235, 241);
+
+    }
+    .start > img{
+        border-radius: 30px 30px ;
+        box-shadow: 0px 0px 5px #000;
+    }
+    .heading h1 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .start2{
+        font-size: 20px;
+        margin-top: -30px;
+    }
+    .start5{
+        padding: 10px 15px ;
+        justify-content: space-between;
+        border-radius: 10px 10px ;
+        color: azure;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+    .secbar2{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+
+    }
+    .box1{
+        text-align: center;
+        justify-content: space-around;
+        overflow-wrap: break-word;
+        width: 20%;
+
+    }
+    .content{
+        font-size: larger;
+    }
+    .btn{
+        padding: 25px 0px;
+    }
+    .btn > button {
+        padding: 13px 51px ;
+        font-weight: bolder;
+        background-color: rgb(122, 162, 236);
+        border: 2px solid rgb(122, 162 ,236);
+        border-radius: 5px 5px ;
+    }
+    .btn > button:hover{
+        cursor: pointer;
+        background-color: rgb(48, 115, 170);
+        border: 2px solid rgb(48, 115, 170); 
+        color: cornsilk;
+    }
+    .content{
+        margin-top: -5px;
+    }
+    .box1{
+        box-shadow: 0px 0px 5px black;
+    }
+    .photo{
+        margin: 0px 0px ;
+        padding: 8px 0px ;
+    }
+    .write{
+        margin-top: -10px ;
+        padding: 0px 0px ;
+    }
+    footer{
+        background: #000;
+        text-align: center;
+        color: aliceblue;
+    }
+    .photo >img{
+        width: 250px;
+        height: 200px;
+    }
+    @media only screen and (max-width: 1024px) {
+
+        .photo > img {
+            width :200px ;
+            height: 200px ;
+        }
+        .btn > button {
+            padding: 13px 35px ;
+        font-weight: bolder;
+        background-color: rgb(122, 162, 236);
+        border: 2px solid rgb(122, 162 ,236);
+        border-radius: 5px 5px ;
+        }
+        .box1{
+            text-align: center;
+        justify-content: space-around;
+        overflow-wrap: break-word;
+        width: 25%;
+        }
+        .start2{
+            margin: 0px 0px ;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .term2{
+            display: none;
+        }
+        .secbar2{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navbar{
+            width: 114%;
+        }
+        .secbar{
+            width: 114%;
+        }
+        footer{
+            width: 114%;
+        }
+        .secbar2{
+            width: 114%;
+        }
+        .box1{
+        text-align: center;
+        justify-content: space-around;
+        overflow-wrap: break-word;
+        width: 310px;
+        margin: 20px 16px ;
+    }
+    .secbar2{
+        margin-top: -70px;
+    }
+}
+@media (min-width:769px) and (max-width:966px) {
+
+     .navbar{
+            width: 127%;
+        }
+        .secbar{
+            width: 127%;
+        }
+        footer{
+            width: 127%;
+        }
+        .secbar2{
+            width: 127%;
+        }
+}
+@media only screen and (max-width:319px){
+    .navbar{
+        width: 114%;
+    }
+    .part{
+        margin: 0px 10px ;
+    }
+
+    
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="term">
+            <ul class="under">
+                <li class="part"><a href="#"><img src="photo.jpg" alt="not available " width="30px" height="30px" id="image"></a></li>
+                <li class="part"><a href="#"></a>Home</li>
+                <li class="part"><a href="#"></a>Videos</li>
+                <li class="part"><a href="#"></a>Blog</li>
+                <li class="part"><a href="#"></a>Contact Me</li>
+            </ul>
+        <div class="term2">
+            <ul>
+                <li class="part2"><input type="text" placeholder="Search" size="10"></li>
+                <li class="part2"><a href="#"><button class="part3">Search</button></a></li>
+                <li class="part2"><a href="#"><button class="part3">Login</button></a></li>
+                <li class="part2"><a href="#"><button class="part3">SignUP</button></a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="secbar">
+        <div class="chan"></div>
+        <div class="chan"></div>
+        <div class="start">
+            <img src="computer.jpg" alt=" Not Available " width="20%" height="20%"> 
+        </div>
+        <div class="heading">
+            <h1>WEB DEVELOPMENT</h1>
+        </div>
+        <div class="chan"></div>
+        <div class="start2">
+            Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! <br>
+Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
+        </div>
+        <div class="chan"></div>
+        <div class="start3">
+            <button class="start5" style="background-color: rgb(236, 81, 25);">Browse Blog</button>
+            <button class="start5" style="background-color: crimson;">Browse Video Tutorial</button>
+            <button class="start5" style="background-color: darkslategray;"> Contact Me </button>
+        </div>
+        <div class="chan"></div>
+        <div class="chan"></div>
+    </section>
+    <div class="chan"></div>
+    <div class="chan"></div>
+    <section class="secbar2">
+        <div class="box1">
+            <div class="photo"><img src="video.jpg" alt="Not Available" width="250px" height="200px"></div>
+            <div class="write"><h1>Free Video Courses </h1></div>
+            <div class="content">Get your programming career started with these free video courses. Source code is available with all the videos for amazing learning experience</div>
+            <div class="btn">
+                <button>Browse Video Course </button>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="photo"><img src="coding.jpg" alt="Not Available" width="250px" height="200px"></div>
+            <div class="write"> <h1>Coding Articles</h1> </div>
+            <div class="content">Some of the latest coding information compiled in the form of coding articles. Keep your programming knowledge up to date with these articles.</div>
+            <div class="btn">
+                <button> Go To Blog </button>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="photo"><img src="contact.jpg" alt="Not Available" width="250px" height="200px"></div>
+            <div class="write"><h1>Contact Me </h1></div>
+            <div class="content">Learn programming from these free courses. Examples are available with these tutorials. You can contact me for any doubt and I will get back to you!</div>
+            <div class="btn">
+                <button> Contact Me </button>
+            </div>
+        </div>
+    </section>
+    <div class="chan"></div>
+    <footer>
+        <div class="chan"></div>
+        &copy;DeepakKumarSharma
+             <br> BCA Department, Pailan College Of management and technology
+             <div class="chan"></div>
+    </footer>
+</body>
+</html>
